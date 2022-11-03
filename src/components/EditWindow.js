@@ -1,4 +1,5 @@
 import React from 'react';
+import Field from './Fields';
 
 class EditWindow extends React.Component {
 	render() {
@@ -8,66 +9,30 @@ class EditWindow extends React.Component {
 					<h2 className="ui header">Edit Your CV Here</h2>
 					<h4 className="ui dividing header">General Information</h4>
 					<div className="two fields">
-						<div className="field">
-							<label>First Name</label>
-							<input type="text" />
-						</div>
-						<div className="field">
-							<label>Last Name</label>
-							<input type="text" />
-						</div>
+						<Field label="First Name" />
+						<Field label="Last Name" />
 					</div>
 					<div className="two fields">
-						<div className="field">
-							<label>E-Mail</label>
-							<input type="text" />
-						</div>
-						<div className="field">
-							<label>Phone Number</label>
-							<input type="text" />
-						</div>
+						<Field label="E-Mail" />
+						<Field label="Phone Number" />
 					</div>
 					<h4 className="ui dividing header">Educational Information</h4>
 					<div className="two fields">
-						<div className="field">
-							<label>Institution</label>
-							<input type="text" />
-						</div>
-						<div className="field">
-							<label>Subject Of Study</label>
-							<input type="text" />
-						</div>
+						<Field label="Institution" />
+						<Field label="Subject Of Study" />
 					</div>
 					<div className="two fields">
-						<div className="field">
-							<label>Degree</label>
-							<input type="text" />
-						</div>
-						<div className="field">
-							<label>(Estimated) Completion</label>
-							<input type="text" />
-						</div>
+						<Field label="Degree" />
+						<Field label="(Estimated) Completion" />
 					</div>
 					<h4 className="ui dividing header">Practical Experience</h4>
 					<div className="two fields">
-						<div className="field">
-							<label>Position</label>
-							<input type="text" />
-						</div>
-						<div className="field">
-							<label>Company</label>
-							<input type="text" />
-						</div>
+						<Field label="Position" />
+						<Field label="Company" />
 					</div>
 					<div className="two fields">
-						<div className="field">
-							<label>From</label>
-							<input type="text" />
-						</div>
-						<div className="field">
-							<label>To</label>
-							<input type="text" />
-						</div>
+						<Field label="From" />
+						<Field label="To" />
 					</div>
 				</form>
 			</div>
