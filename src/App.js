@@ -5,18 +5,34 @@ class App extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			personal: { first: '', last: '', email: '', phone: '' },
-			educational: { institution: '', subject: '', degree: '', completion: '' },
-			practical: { position: '', company: '', from: '', to: '' },
+			first: '',
+			last: '',
+			email: '',
+			phone: '',
+			institution: '',
+			subject: '',
+			degree: '',
+			completion: '',
+			position: '',
+			company: '',
+			from: '',
+			to: '',
 		};
+
+		this.handleChange = this.handleChange.bind(this);
+	}
+
+	handleChange({ target }) {
+		const { name, value } = target;
+		this.setState({ [name]: value });
 	}
 
 	render() {
 		return (
-			<div className="ui divided stackable grid container" style={{ marginTop: '50px' }}>
+			<div className="ui divided stackable grid container" style={{ marginTop: '50px', paddingInline: '30px' }}>
 				<div className="row">
 					<div className="eight wide column">
-						<EditWindow />
+						<EditWindow handleChange={this.handleChange} />
 					</div>
 				</div>
 			</div>

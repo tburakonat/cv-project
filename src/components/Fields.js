@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Field({ label }) {
+function Field({ label, handleChange, name }) {
 	return (
 		<div className="field">
 			<label>{label}</label>
-			<input type="text" />
+			<input type="text" name={name} onChange={handleChange} />
 		</div>
 	);
 }
