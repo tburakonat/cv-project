@@ -1,5 +1,6 @@
 import React from 'react';
 import EditWindow from './components/EditWindow';
+import DisplayWindow from './components/DisplayWindow';
 
 class App extends React.Component {
 	constructor() {
@@ -33,6 +34,9 @@ class App extends React.Component {
 				<div className="row">
 					<div className="eight wide column">
 						<EditWindow handleChange={this.handleChange} />
+					</div>
+					<div className="eight wide column">
+						<DisplayWindow state={this.state} />
 					</div>
 				</div>
 			</div>
