@@ -12,37 +12,37 @@ const DisplayWindow = ({ state }) => {
 					{state.phone}
 				</div>
 				<div>
-					{state.email && <i class="at icon"></i>}
+					{state.email && <i className="at icon"></i>}
 					{state.email}
 				</div>
 			</header>
 			<div className="ui segment">
 				<h2 className="ui header">Educational Information</h2>
 				<div>
-					{state.institution && <i class="university icon"></i>}
+					{state.institution && <i className="university icon"></i>}
 					{state.institution}
 				</div>
 				<div>
-					{(state.subject || state.degree) && <i class="pencil alternate icon"></i>}
+					{(state.subject || state.degree) && <i className="pencil alternate icon"></i>}
 					{state.subject} {state.degree}
 				</div>
 				<div>
-					{state.completion && <i class="calendar alternate icon"></i>}
+					{state.completion && <i className="calendar alternate icon"></i>}
 					{state.completion}
 				</div>
 			</div>
 			<div className="ui segment">
 				<h2 className="ui header">Practical Experience</h2>
 				<div>
-					{state.position && <i class="user icon"></i>}
+					{state.position && <i className="user icon"></i>}
 					{state.position}
 				</div>
 				<div>
-					{state.company && <i class="building icon"></i>}
+					{state.company && <i className="building icon"></i>}
 					{state.company}
 				</div>
 				<div>
-					{(state.from || state.to) && <i class="calendar outline icon"></i>}
+					{(state.from || state.to) && <i className="calendar outline icon"></i>}
 					{state.from ? `From: ${state.from} - ` : ''}
 					{state.to ? `To: ${state.to}` : ''}
 				</div>
